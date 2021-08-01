@@ -1,0 +1,28 @@
+Sample Input 0:
+
+1
+2
+1
+illegal
+1
+
+Sample Output 0:
+0
+
+Sample Input 1:
+5
+0
+3
+2
+3
+4
+5
+legal
+legal
+illegal
+legal
+legal
+1
+
+Sample Output 1:
+5

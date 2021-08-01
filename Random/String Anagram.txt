@@ -1,0 +1,43 @@
+Sample input 0:
+
+STDIN     Function
+-----     -----
+5      →  dictionary[] size n = 5
+heater →  dictionary = ['heater', 'cold', 'clod', 'reheat', 'docl']
+cold
+clod
+reheat
+docl
+3      →  query[] size q = 3
+codl   →  query = ['codl', 'heater', 'abcd']
+heater
+abcd
+
+Sample Output 0:
+3
+2
+0
+
+Sample input 1:
+STDIN     Function
+-----     -----
+8      →  dictionary[] size n = 8
+listen →  dictionary = ['listen', 'tow', 'silent', 'lisent', 'two', 'abc', 'no', 'on']
+tow
+silent
+lisent
+two
+abc
+no
+on
+4      →  query[] size q = 4
+two    →  query = ['two', 'bca', 'no', 'listen']
+bca
+no
+listen
+
+Sample Output 1:
+2
+1
+2
+3
