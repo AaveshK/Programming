@@ -1,0 +1,4 @@
+boolean almostIncreasingSequence(int[] sequence)
+{
+    
+}
