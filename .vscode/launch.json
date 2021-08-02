@@ -1,0 +1,42 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch HelpfulMaths_339A",
+            "request": "launch",
+            "mainClass": "HelpfulMaths_339A",
+            "projectName": "Programming_855e3067"
+        },
+        {
+            "type": "java",
+            "name": "Launch BeautifulMatrix_263A",
+            "request": "launch",
+            "mainClass": "BeautifulMatrix_263A",
+            "projectName": "Programming_855e3067"
+        },
+        {
+            "type": "java",
+            "name": "Launch PetyaandStrings_112A",
+            "request": "launch",
+            "mainClass": "PetyaandStrings_112A",
+            "projectName": "Programming_855e3067"
+        },
+        {
+            "type": "java",
+            "name": "Launch BearandBigBrother_719A",
+            "request": "launch",
+            "mainClass": "BearandBigBrother_719A",
+            "projectName": "Programming_855e3067"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        }
+    ]
+}
