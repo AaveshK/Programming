@@ -29,42 +29,28 @@ class codef
             int count = 0;
             int N = Integer.parseInt(in.readLine());
             String  lines = in.readLine();
-            int[] e = new int[N];
-            for (int i = 0; i < N; i++)
-            {
-                e[i] = Integer.parseInt(String.valueOf(lines.charAt(i)));
-            }
+            char[] e = lines.toCharArray();
+ 
             lines = in.readLine();
-            int[] o = new int[N];
-            for (int i = 0; i < N; i++)
-            {
-                o[i] = Integer.parseInt(String.valueOf(lines.charAt(i)));
-                if(o[i] == 1)
-                {
-                    if(e[i] == 0)
-                        {
-                            count++;
-                            o[i] = 0;
-                        }
-                }
-            }
+            char[] o = lines.toCharArray();
             
             for(int i=0; i<N; i++)
             {
-                if(o[i]==1)
-                    if(e[i] == 0)
-                    {
-                        e[i] = -1;
-                        count++;
-                    }
-                    else if(i>0 && e[i-1] == 1)
+                if(o[i]=='1')
+                    if(i>0 && e[i-1] == '1')
                     {
                         count++;
-                        e[i-1] = -1;
+                        e[i-1] = '2';
                     }
-                    else if(i<N-1 && e[i+1] == 1)
+                    else if(e[i] == '0')
                     {
-                        e[i+1] = -1;
+                        e[i] = '2';
+                        count++;
+                    }
+ 
+                    else if(i<N-1 && e[i+1] == '1')
+                    {
+                        e[i+1] = '2';
                         count++;
                     }
             }

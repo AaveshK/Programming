@@ -1,6 +1,5 @@
-import java.util.*;
-import java.lang.*;
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 
 /* Name of the class has to be "Main" only if the class is public. */
 class Codechef
@@ -12,8 +11,7 @@ class Codechef
 		int T = Integer.parseInt(in.readLine());
 		while(T -- > 0)
 		{
-		    int count = 0;
-            String  lines = in.readLine();    
+		    String  lines = in.readLine();    
             String[] strs = lines.trim().split("\\s+");
             int x = Integer.parseInt(strs[0]);
             int y = Integer.parseInt(strs[1]);
