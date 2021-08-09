@@ -25,7 +25,11 @@ import java.io.*;
 
 class Codeforces
 {
-public static void main (String[] args) throws IOException
+    static int max(int x, int y){return ((x > y) ? x : y );}
+    static int min(int x, int y){return ((x < y) ? x : y );}
+    static int sum(int[] A){int sum = 0;for(int i=0; i<A.length; i++)sum+=A[i];return (sum);}
+    static int gcd(int a, int b){if (b == 0)return a;return gcd(b, a % b);}
+    public static void main (String[] args) throws IOException
 	{
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 		int T = Integer.parseInt(in.readLine());
@@ -44,24 +48,26 @@ public static void main (String[] args) throws IOException
             {
                 A[i] = Long.parseLong(strs[i]);
             }
+            Map<Long, Integer> map = new TreeMap<>();
+            for (int i = 0; i < A.length; i++)
+            {
+                map.put(A[i], i);
+            }
+            int rank = 1;
+            for (int val: map.values())
+            {
+                A[val] = rank++;
+            }
             for(int i = 0; i<N-1; i++)
             {
-                if(A[i] > A[i+1])
+                if(A[i] > A[i+1] || A[i]+1!=A[i+1])
                     count++;
             }
             //System.out.println(count);
-            if(count < k && k <= N && k >=1)
+            if(count < k)
                 System.out.println("Yes");
             else
                 System.out.println("No");
         }
 	}
-    static int max(int x, int y)
-    {
-        return ((x > y) ? x : y );
-    }
-    static int min(int x, int y)
-    {
-        return ((x < y) ? x : y );
-    }
 }
