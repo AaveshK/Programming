@@ -23,7 +23,7 @@ import java.util.*;
 import java.lang.*;
 import java.io.*;
 
-class Codeforces
+class Moamen_737B
 {
     static int max(int x, int y){return ((x > y) ? x : y );}
     static int min(int x, int y){return ((x < y) ? x : y );}
