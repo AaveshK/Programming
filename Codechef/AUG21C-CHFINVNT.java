@@ -21,9 +21,8 @@ Sample Output 1
 //import java.lang.*;
 import java.io.*;
 
-import javax.lang.model.util.ElementScanner6;
 
-class Codechef
+class CHFINVNT
 {
     public static void main (String[] args) throws java.lang.Exception
 	{
@@ -39,32 +38,22 @@ class Codechef
             /*int N = Integer.parseInt(strs[0]);
             int p = Integer.parseInt(strs[1]);
             int K = Integer.parseInt(strs[2]);*/
-            int count = 1;
+            long count = 0;
             long i = 0;
-            while(true)
+            long x = p % K;
+            long y = (N-1) - ((N-1)/K * K);
+            if(x > y)
+                count = (N-1)/K * x + y +1;
+            else
+                count = ((N-1)/K +1 ) * x;
+            
+            for(i = x; i<N; i=i+K)
             {
-                /*if(p == 0)
-                    {
-                        System.out.println("1");
-                        break;
-                    }
-                else if(p == K)
-                    {System.out.println("2"); break;}*/
-                if((i % (N+1)) != p)
-                    {
-                    count++;
-                    i += K;
-                    i = i % (N+1);
-                    }
-                else
-                    {
-                        System.out.println(count);
-                        break;
-                    }
-                
-                //System.out.print(i+" "+count+" ");
+                count++;
+                if(i == p)
+                    break;
             }
-            //System.out.println(count);
+            System.out.println(count);
         }
 	}
 }
