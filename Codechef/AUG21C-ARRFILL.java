@@ -25,7 +25,7 @@ import java.util.*;
 import java.lang.*;
 import java.io.*;
 
-class Codechef
+class ARRFILL
 {
     static int max(int x, int y){return ((x > y) ? x : y );}
     static int min(int x, int y){return ((x < y) ? x : y );}
