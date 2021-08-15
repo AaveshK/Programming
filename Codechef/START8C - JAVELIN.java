@@ -57,9 +57,10 @@ class JAVELIN
             if(qual >= X)
             {
                 System.out.print(qual);
-                for(int i = 1; i<= qual; i++)
+                for(int i = 1; i<= N; i++)
                 {
-                    System.out.print(" "+(i));
+                    if(A[i]>= M)
+                        System.out.print(" "+(i));
                 }
                 System.out.println();
             }
