@@ -21,7 +21,7 @@ Case #2: 700
 */
 
 
-// --------- Passes the same TC but RE for actual submission ---------
+// --------- Passes the sample TC but RE for actual submission ---------
 
 import java.io.*;
 import java.util.*;
