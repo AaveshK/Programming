@@ -17,7 +17,7 @@ Sample Output 1
 import java.io.*;
 import java.util.*;
   
-public class LTIME101BQ2
+public class LTIME101B_CHEFCAR
 {
     static int MAX(int x, int y){return ((x > y) ? x : y );}
     static int MIN(int x, int y){return ((x < y) ? x : y );}
@@ -50,6 +50,7 @@ public class LTIME101BQ2
     public static void main(String[] args) throws IOException
     {
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+        PrintWriter output = new PrintWriter(System.out);
         if (System.getProperty("ONLINE_JUDGE") == null)
         {
             try 
@@ -74,6 +75,7 @@ public class LTIME101BQ2
             else
                 min = (N-V) * (N-V+1)/2 + V - 1;
             System.out.println(max+" "+min);
+            output.close();
         }
     }
 }
