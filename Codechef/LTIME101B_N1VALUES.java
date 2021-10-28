@@ -15,7 +15,7 @@ Sample Output 1
 import java.io.*;
 import java.util.*;
   
-public class LTIME101BQ1
+class Codechef
 {
     static int MAX(int x, int y){return ((x > y) ? x : y );}
     static int MIN(int x, int y){return ((x < y) ? x : y );}
@@ -68,22 +68,10 @@ public class LTIME101BQ1
     }
     static void solver(int N)
     {
-        if(N == 1)
-        {
-            System.out.println("1 1");
-            return;
-        }
-        if(N == 2)
-        {
-            System.out.println("1 1 2");
-            return;
-        }
         List<Long> list = new ArrayList<>();
         list.add((long)1);
-        list.add((long)2);
-        list.add((long)2);
-        list.add((long)3);
-        for(int i = 3; i <= N; i++)
+        list.add((long)1);
+        for(int i = 1; i <= N; i++)
         {
             list.add((long)Math.pow(2,i));
         }
